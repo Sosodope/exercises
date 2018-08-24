@@ -4,3 +4,22 @@
   width: 100px;
   height: 100px;
 }
+.loader {
+  width: 850px;
+  height: 5px;
+  background: #ff00b7;
+  animation: 3s progress infinite;
+}
+.container {
+  width: 1500px;
+  height: 8px;
+  background: #efefef;
+}
+@keyframes progress {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(1435px);
+  }
+}
