@@ -4,7 +4,11 @@ const Lists = props => {
   return (
     <ul>
       {props.items.map((item, index) => {
-        return <li key={index}>{item}</li>;
+        return (
+          <li key={index} onClick={props.handleClick}>
+            {item}
+          </li>
+        );
       })}
     </ul>
   );
